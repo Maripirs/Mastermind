@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mastermind</title>
+    <link rel="stylesheet" href="style.css">
+    <script type="text/javascript" src="app.js" defer></script>
+</head>
+<body>
+    <div class=" container">
+        <div class = "header"><h1>Mastermind</h1> </div>
+        <div class="guessLine solution"> 
+            <div class=" solNumber"><h4>  </h4></div>
+            <div class = 'guess' id="solutiona"></div>
+            <div class = 'guess' id="solutionb"></div>
+            <div class = 'guess' id="solutionc"></div>
+            <div class = 'guess' id="solutiond"></div>
+            <div class = 'evaluation'>
+                <div class="row1 bottom" >
+                    <div  class="evalSpot" ></div>
+                    <div  class="evalSpot" ></div>
+                </div>
+                <div class="row2 bottom">
+                    <div  class="evalSpot" ></div>
+                    <div  class="evalSpot" ></div>
+                </div>
+            </div>
+        </div>
+        <div class = 'guessLine' id="guess1">
+            <div class=" solNumber"><h4> 1 </h4></div>
+            <div class = 'guess' id="guess1a"></div>
+            <div class = 'guess' id="guess1b"></div>
+            <div class = 'guess' id="guess1c"></div>
+            <div class = 'guess' id="guess1d"></div>
+            <div class = 'evalutation' id = 'evaluation1'>
+                <div class="row1">
+                    <div  class="evalSpot" id = 'ev1a'></div>
+                    <div  class="evalSpot" id = 'ev1b'></div>
+                </div>
+                <div class="row2">
+                    <div  class="evalSpot" id = 'ev1c'></div>
+                    <div  class="evalSpot" id = 'ev1d'></div>
+                </div>
+            </div>
+        </div>
+        <div class = 'guessLine' id="guess2">
+            <div class=" solNumber"><h4> 2 </h4></div>
+            <div class = 'guess' id="guess2a"></div>
+            <div class = 'guess' id="guess2b"></div>
+            <div class = 'guess' id="guess2c"></div>
+            <div class = 'guess' id="guess2d"></div>
+            <div class = 'evalutation' id = 'evaluation2'>
+                <div class="row1">
+                    <div  class="evalSpot" id = 'ev2a'></div>
+                    <div  class="evalSpot" id = 'ev2b'></div>
+                </div>
+                <div class="row2">
+                    <div  class="evalSpot" id = 'ev2c'></div>
+                    <div  class="evalSpot" id = 'ev2d'></div>
+                </div>
+            </div>
+        </div>
+        <div class = 'guessLine' id="guess3">
+            <div class=" solNumber"><h4> 3 </h4></div>
+            <div class = 'guess' id="guess3a"></div>
+            <div class = 'guess' id="guess3b"></div>
+            <div class = 'guess' id="guess3c"></div>
+            <div class = 'guess' id="guess3d"></div>
+            <div class = 'evalutation' id = 'evaluation3'>
+                <div class="row1">
+                    <div  class="evalSpot" id = 'ev3a'></div>
+                    <div  class="evalSpot" id = 'ev3b'></div>
+                </div>
+                <div class="row2">
+                    <div  class="evalSpot" id = 'ev3c'></div>
+                    <div  class="evalSpot" id = 'ev3d'></div>
+                </div>
+            </div>
+        </div>
+        <div class = 'guessLine' id="guess4">
+            <div class=" solNumber"><h4> 4 </h4></div>
+            <div class = 'guess' id="guess4a"></div>
+            <div class = 'guess' id="guess4b"></div>
+            <div class = 'guess' id="guess4c"></div>
+            <div class = 'guess' id="guess4d"></div>
+            <div class = 'evalutation' id = 'evaluation4'>
+                <div class="row1">
+                    <div  class="evalSpot" id = 'ev4a'></div>
+                    <div  class="evalSpot" id = 'ev4b'></div>
+                </div>
+                <div class="row2">
+                    <div  class="evalSpot" id = 'ev4c'></div>
+                    <div  class="evalSpot" id = 'ev4d'></div>
+                </div>
+            </div>
+        </div>
+        <div class = 'guessLine' id="guess5">
+            <div class=" solNumber"><h4> 5 </h4></div>
+            <div class = 'guess' id="guess5a"></div>
+            <div class = 'guess' id="guess5b"></div>
+            <div class = 'guess' id="guess5c"></div>
+            <div class = 'guess' id="guess5d"></div>
+            <div class = 'evalutation' id = 'evaluation5'>
+                <div class="row1">
+                    <div  class="evalSpot" id = 'ev5a'></div>
+                    <div  class="evalSpot" id = 'ev5b'></div>
+                </div>
+                <div class="row2">
+                    <div  class="evalSpot" id = 'ev5c'></div>
+                    <div  class="evalSpot" id = 'ev5d'></div>
+                </div>
+            </div>
+        </div>
+        <div class = 'guessLine' id="guess6">
+            <div class=" solNumber"><h4> 6 </h4></div>
+            <div class = 'guess' id="guess6a"></div>
+            <div class = 'guess' id="guess6b"></div>
+            <div class = 'guess' id="guess6c"></div>
+            <div class = 'guess' id="guess6d"></div>
+            <div class = 'evalutation' id = 'evaluation6'>
+                <div class="row1">
+                    <div  class="evalSpot" id = 'ev6a'></div>
+                    <div  class="evalSpot" id = 'ev6b'></div>
+                </div>
+                <div class="row2">
+                    <div  class="evalSpot" id = 'ev6c'></div>
+                    <div  class="evalSpot" id = 'ev6d'></div>
+                </div>
+            </div>
+        </div>
+        <div class = 'guessLine' id="guess7">
+            <div class=" solNumber"><h4> 7 </h4></div>
+            <div class = 'guess' id="guess7a"></div>
+            <div class = 'guess' id="guess7b"></div>
+            <div class = 'guess' id="guess7c"></div>
+            <div class = 'guess' id="guess7d"></div>
+            <div class = 'evalutation' id = 'evaluation7'>
+                <div class="row1">
+                    <div  class="evalSpot" id = 'ev7a'></div>
+                    <div  class="evalSpot" id = 'ev7b'></div>
+                </div>
+                <div class="row2">
+                    <div  class="evalSpot" id = 'ev7c'></div>
+                    <div  class="evalSpot" id = 'ev7d'></div>
+                </div>
+            </div>
+        </div>
+        <div class = 'guessLine' id="guess8">
+            <div class=" solNumber"><h4> 8 </h4></div>
+            <div class = 'guess' id="guess8a"></div>
+            <div class = 'guess' id="guess8b"></div>
+            <div class = 'guess' id="guess8c"></div>
+            <div class = 'guess' id="guess8d"></div>
+            <div class = 'evalutation' id = 'evaluation8'>
+                <div class="row1">
+                    <div  class="evalSpot" id = 'ev8a'></div>
+                    <div  class="evalSpot" id = 'ev8b'></div>
+                </div>
+                <div class="row2">
+                    <div  class="evalSpot" id = 'ev8c'></div>
+                    <div  class="evalSpot" id = 'ev8d'></div>
+                </div>
+            </div>
+        </div>
+        <div class = 'guessLine' id="guess9">
+            <div class=" solNumber"><h4> 9 </h4></div>
+            <div class = 'guess' id="guess9a"></div>
+            <div class = 'guess' id="guess9b"></div>
+            <div class = 'guess' id="guess9c"></div>
+            <div class = 'guess' id="guess9d"></div>
+            <div class = 'evalutation' id = 'evaluation9'>
+                <div class="row1">
+                    <div  class="evalSpot" id = 'ev9a'></div>
+                    <div  class="evalSpot" id = 'ev9b'></div>
+                </div>
+                <div class="row2">
+                    <div  class="evalSpot" id = 'ev9c'></div>
+                    <div  class="evalSpot" id = 'ev9d'></div>
+                </div>
+            </div>
+        </div>
+        <div class = 'guessLine' id="guess10">
+            <div class=" solNumber"><h4> 10 </h4></div>
+            <div class = 'guess' id="guess10a"></div>
+            <div class = 'guess' id="guess10b"></div>
+            <div class = 'guess' id="guess10c"></div>
+            <div class = 'guess' id="guess10d"></div>
+            <div class = 'evalutation' id = 'evaluation10'>
+                <div class="row1">
+                    <div  class="evalSpot" id = 'ev10a'></div>
+                    <div  class="evalSpot" id = 'ev10b'></div>
+                </div>
+                <div class="row2">
+                    <div  class="evalSpot" id = 'ev10c'></div>
+                    <div  class="evalSpot" id = 'ev10d'></div>
+                </div>
+            </div>
+            
+        </div>
+        <div id="userInput"> 
+            <div class ='solNumber'><h5>User Guess</h5></div>
+            <div class = 'guess guessInput' id="usera"></div>
+            <div class = 'guess guessInput' id="userb"></div>
+            <div class = 'guess guessInput' id="userc"></div>
+            <div class = 'guess guessInput' id="userd"></div>
+            <!-- <select name="drop-down" id="index0">
+                <option value="blue">Blue</option>
+                <option value="green">Green</option>
+                <option value="yellow">Yellow</option>
+                <option value="red">Red</option>
+                <option value="white">White</option>
+                <option value="black">Black</option>
+            </select>
+            <select name="drop-down" id="index1">
+                <option value="blue">Blue</option>
+                <option value="green">Green</option>
+                <option value="yellow">Yellow</option>
+                <option value="red">Red</option>
+                <option value="white">White</option>
+                <option value="black">Black</option>
+            </select>
+            <select name="drop-down" id="index2">
+                <option value="blue">Blue</option>
+                <option value="green">Green</option>
+                <option value="yellow">Yellow</option>
+                <option value="red">Red</option>
+                <option value="white">White</option>
+                <option value="black">Black</option>
+            </select>
+            <select name="drop-down" id="index3">
+                <option value="blue">Blue</option>
+                <option value="green">Green</option>
+                <option value="yellow">Yellow</option>
+                <option value="red">Red</option>
+                <option value="white">White</option>
+                <option value="black">Black</option>
+            </select> -->
+            <div class = 'evaluation'>
+                <div class="row1 bottom" >
+                    <div  class="evalSpot" id = 'ev2a'></div>
+                    <div  class="evalSpot" id = 'ev2b'></div>
+                </div>
+                <div class="row2 bottom">
+                    <div  class="evalSpot" id = 'ev2c'></div>
+                    <div  class="evalSpot" id = 'ev2d'></div>
+                </div>
+            </div>
+        </div>
+        
+        <div class="submitClass">
+            <button class ="resetBtn" id = 'mainScreen'>Reset</button>
+            <button id="submitGuess">Submit</button>
+        </div>
+    </div>
+    <div class="gameEnd">
+            <h2 id="gameResult"></h2>
+            <h2 id="gameResult2"></h2> 
+            <h2>Thanks for playing</h2>
+            <div class="buttonsLine">
+                <button class="finalScreen endButton">See final screen</button>
+                <button class="playAgain endButton">Play Again</button>
+            </div>
+
+    </div>
+    
+</body>
+</html>
