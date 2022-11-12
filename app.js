@@ -232,6 +232,7 @@ const pushGuess = () => {
             }
             round ++
         }else{
+            alert('Please complete your guess')
             console.log('Please complete your guess')
         }
     }
