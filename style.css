@@ -7,7 +7,7 @@ body{
     background: linear-gradient(to top, rgb(50, 1, 50), rgb(54, 35, 85));
     background: -webkit-linear-gradient(to top, rgb(50, 1, 50), rgb(54, 35, 85));
     background: -moz-linear-gradient(to top, rgb(50, 1, 50), rgb(54, 35, 85));
-    background-size: cover;
+    background-size: auto 150%;
     background-repeat: no-repeat;
     display: flex;
     align-items:center;
@@ -28,7 +28,7 @@ html{
     box-shadow:rgb(0, 0, 0,.50) 10px 10px 10px ;
     display: flex;
     flex-direction: column;
-    justify-content:center;
+    justify-content:flex-start;
     align-items: space-between;
     
 
@@ -44,7 +44,7 @@ html{
 }
 
 .guess {
-    background-color: rgb(50, 1, 50);
+    background-color: rgb(143, 104, 143);
     box-shadow: rgb(0, 0, 0, .7) .3vh .3vh .5vh inset;
     width: 1.5vh;
     height: 1.5vh;
@@ -131,7 +131,7 @@ h1, h4, h5{
 .guessInput{
     width: 2vh;
     height: 2vh;
-    border-radius: 5vmin;
+    border-radius: 5vh;
 }
 
 h1{
@@ -161,7 +161,7 @@ h2{
 }
 
 .solution{
-    visibility: hidden;
+    visibility:visible;
     height: 4vmin;
     padding: none;
     background-color: #d490c7;
@@ -201,5 +201,38 @@ h2{
     display: none;
     justify-content: center;
     align-items: center;
+}
+
+@media (max-width: 500px){
+    #userInput{
+        position: fixed;
+        bottom: 4.4vh;
+        width: 100%;
+        left: 0;
+        border: none;
+        height: 11vh;
+        background-color: rgb(44, 44, 51);
+        border-top: solid .5vh rgb(227, 227, 227);
+    }
+    .submitClass{
+        position: fixed;
+        bottom: 0;
+        width: 100%;
+        left: 0;
+        background-color: rgb(44, 44, 51);;
+        padding-top: 2vh;
+    }
+    .guessInput{
+        height: 5vh;
+        width: 5vh;
+        border-radius: 5vh;
+    }
+    #userGuessText{
+        display: none;
+    }
+    #userInput .evaluation {
+        display: none;
+    }
 
 }
+

@@ -14,7 +14,7 @@ const resetBtn =document.querySelector('#mainScreen')
 const guessColor = 'rgb(50, 1, 50)';
 const evalColor = 'rgb(64, 64, 64)';
 
-const choices =['rgb(0, 128, 0)', 'rgb(0, 0, 255)', 'rgb(255, 255, 0)', 'rgb(255, 0, 0)', 'rgb(0, 0, 0)', 'rgb(255, 255, 255)' ]
+const choices =['rgb(0, 128, 0)', 'rgb(0, 0, 255)', 'rgb(255, 255, 0)', 'rgb(255, 0, 0)', 'rgb(60, 60, 60)', 'rgb(255, 255, 255)' ]
 let solution = []
 let round = 1
 
@@ -162,7 +162,7 @@ const drawHints = (result,round) => {
 
 //resets the circles to original color
 const clearGuesses = (container) =>{
-    container.style.backgroundColor = 'rgb(50, 1, 50)'
+    container.style.backgroundColor = 'rgb(143, 104, 143)'
 }
 const clearHints = (container) =>{
     container.style.backgroundColor = 'rgb(64, 64, 64)'
@@ -222,7 +222,7 @@ const pushGuess = () => {
     evaluation.rightPlace = 0
     if (gameOver === false){
         getUserGuess()
-        if (userGuess.includes('rgb(50, 1, 50)')=== false ){
+        if (userGuess.includes('rgb(143, 104, 143)')=== false ){
             updateGuess(round)
             let result = compareGuesses (solution,userGuess)
             drawHints(result, round)
