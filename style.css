@@ -161,7 +161,7 @@ h2{
 }
 
 .solution{
-    visibility:visible;
+    visibility: hidden;
     height: 4vmin;
     padding: none;
     background-color: #d490c7;
@@ -206,11 +206,11 @@ h2{
 @media (max-width: 500px){
     #userInput{
         position: fixed;
-        bottom: 4.4vh;
+        bottom: 4.1vh;
         width: 100%;
         left: 0;
         border: none;
-        height: 11vh;
+        height: 15vh;
         background-color: rgb(44, 44, 51);
         border-top: solid .5vh rgb(227, 227, 227);
     }
@@ -220,11 +220,19 @@ h2{
         width: 100%;
         left: 0;
         background-color: rgb(44, 44, 51);;
-        padding-top: 2vh;
+        padding-top: 1vh;
+
+    }
+    .guess {
+        background-color: rgb(143, 104, 143);
+        box-shadow: rgb(0, 0, 0, .7) .3vh .3vh .5vh inset;
+        width: 2vh;
+        height: 2vh;
+        border-radius: 10px;
     }
     .guessInput{
-        height: 5vh;
-        width: 5vh;
+        height: 8vh;
+        width: 8vh;
         border-radius: 5vh;
     }
     #userGuessText{
@@ -233,6 +241,16 @@ h2{
     #userInput .evaluation {
         display: none;
     }
-
-}
-
+    #submitGuess{
+        margin-bottom: 1vh;
+    }
+    .guessLine{
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        border-top: .3vh solid rgb(148, 88, 140);
+        padding-top: 1vh;
+        padding-bottom: 1vh;
+        height: 3.5vh;
+    }
+    
