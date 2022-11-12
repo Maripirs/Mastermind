@@ -21,7 +21,7 @@ html{
     border:rgb(125, 125, 125) 5px solid;
     margin-top: 2vh;
     border-radius: 3vh;
-    background-color: rgb(64, 64, 64);
+    background-color: rgb(80, 79, 79);
     width: 30vh;
     max-width: 80vw;
     height: 90vh;
@@ -48,7 +48,7 @@ html{
     box-shadow: rgb(0, 0, 0, .7) .3vh .3vh .5vh inset;
     width: 1.5vh;
     height: 1.5vh;
-    border-radius: 10px;
+    border-radius: 1.5vh;
 }
 
 #userInput{
@@ -59,7 +59,7 @@ html{
     flex-direction: row;
     align-items: center;
     justify-content: space-around;
-    background-color: rgb(44, 44, 51);
+    background-color: rgb(24, 20, 24);;
 }
 
 .userButton{
@@ -206,12 +206,12 @@ h2{
 @media (max-width: 500px){
     #userInput{
         position: fixed;
-        bottom: 4.1vh;
+        bottom: 3.1vh;
         width: 100%;
         left: 0;
         border: none;
         height: 15vh;
-        background-color: rgb(44, 44, 51);
+        background-color: rgb(24, 20, 24);
         border-top: solid .5vh rgb(227, 227, 227);
     }
     .submitClass{
@@ -219,7 +219,7 @@ h2{
         bottom: 0;
         width: 100%;
         left: 0;
-        background-color: rgb(44, 44, 51);;
+        background-color: rgb(24, 20, 24);;
         padding-top: 1vh;
 
     }
@@ -228,7 +228,7 @@ h2{
         box-shadow: rgb(0, 0, 0, .7) .3vh .3vh .5vh inset;
         width: 2vh;
         height: 2vh;
-        border-radius: 10px;
+        border-radius: 2vh;
     }
     .guessInput{
         height: 8vh;
